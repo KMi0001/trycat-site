@@ -10,8 +10,9 @@ style.css       디자인
 script.js       불 켜기/끄기, 고양이 눈, 문의 창
 config.js       ★ 올리기 전에 채울 값 (이메일, 상호 등)
 404.html        없는 주소로 들어왔을 때 보이는 페이지
-favicon.svg     브라우저 탭 아이콘
-assets/         이미지 (고양이 사진)
+favicon.svg     브라우저 탭 아이콘 (회사 로고 마크)
+apple-touch-icon.png  아이폰 홈 화면 아이콘
+assets/         이미지 (고양이 사진, 공유 썸네일)
 .nojekyll       GitHub가 파일을 그대로 쓰게 하는 표시 (지우지 마세요)
 ```
 
