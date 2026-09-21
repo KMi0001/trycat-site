@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — TRYCAT</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1A1A1A">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Nanum+Gothic+Coding:wght@400;700&amp;display=swap">
+<style>
+:root{--ground:#1A1A1A;--ink:#F1E3A4}
+[data-theme="light"]{--ground:#F1E3A4;--ink:#1A1A1A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:'JetBrains Mono','Nanum Gothic Coding',ui-monospace,Menlo,Consolas,monospace;line-height:1.5}
+main{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;gap:32px;padding:48px 24px}
+pre{margin:0;font:inherit;font-weight:700;font-size:clamp(28px,6vw,56px);line-height:1.3;white-space:pre-wrap}
+a{color:inherit;font-size:20px}
+:focus-visible{outline:3px solid currentColor;outline-offset:4px;border-radius:4px}
+</style>
+<script>try{var t=localStorage.getItem('trycat-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<main>
+<pre>try {
+    find("this page")
+} catch (e) {
+    // 앗, 페이지를 못 찾았어요.
+}</pre>
+<a id="home" href="/">처음으로 돌아가기</a>
+</main>
+<script>
+/* github.io/저장소이름/ 주소에서는 저장소 이름까지가 처음 페이지예요 */
+(function(){var h=location.hostname,p=location.pathname.split('/')[1];
+if(/\.github\.io$/.test(h)&&p&&p!=='404.html'){document.getElementById('home').href='/'+p+'/';}})();
+</script>
+</body>
+</html>
