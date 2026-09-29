@@ -98,6 +98,7 @@ button { font: inherit; color: inherit; }
 .kw { all: unset; color: inherit; cursor: default; font-size: 26px; padding-left: 4ch; white-space: nowrap; }
 .kw:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; border-radius: 4px; }
 .cm { margin-left: 32px; font-size: 18px; opacity: .6; white-space: nowrap; }
+.cm.grp { margin-left: calc(4ch * 26 / 18); }
 .tip {
   position: absolute; right: 36px; top: 50%; width: 400px; padding: 14px 18px; border-radius: 12px;
   background: var(--ink); color: var(--ground); font-size: 15px; line-height: 1.6;
