@@ -12,5 +12,5 @@ window.SITE = {
   bizNo: "",
 
   // PicMedic 웹 버전 주소. 비워두면 링크가 숨겨져요. (예: "https://picmedic.example.com")
-  picmedicUrl: ""
+  picmedicUrl: "https://picmedic.try-cat.com"
 };
