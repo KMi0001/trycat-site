@@ -6,10 +6,10 @@ window.SITE = {
   email: "",
 
   // 하단에 표시할 상호. 비워두면 이 줄이 숨겨져요.
-  company: "",
+  company: "주식회사 트라이캣",
 
   // 하단에 표시할 사업자등록번호. 비워두면 이 줄이 숨겨져요. (예: "000-00-00000")
-  bizNo: "",
+  bizNo: "425-81-01546",
 
   // PicMedic 웹 버전 주소. 비워두면 링크가 숨겨져요. (예: "https://picmedic.example.com")
   picmedicUrl: "https://picmedic.try-cat.com",
