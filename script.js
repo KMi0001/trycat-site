@@ -1,11 +1,23 @@
 /* TRYCAT — script.js
-   1) config.js 값 채우기  2) 불 켜기/끄기  3) 고양이 눈 따라가기  4) 문의 창(메일 앱 열기) */
+   0) 방문자 분석  1) config.js 값 채우기  2) 불 켜기/끄기  3) 고양이 눈 따라가기  4) 문의 창(메일 앱 열기) */
 (function () {
   'use strict';
 
   var S = window.SITE || {};
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+
+  /* ---------- 0) 방문자 분석 (config.js의 gaId가 있을 때만) ---------- */
+  if (S.gaId) {
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(S.gaId);
+    document.head.appendChild(ga);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', S.gaId);
+  }
 
   /* ---------- 1) config 값 채우기 ---------- */
   $$('[data-site-row]').forEach(function (row) {
