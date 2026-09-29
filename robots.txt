@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://try-cat.com/sitemap.xml
