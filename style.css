@@ -98,6 +98,7 @@ button { font: inherit; color: inherit; }
 .kw { all: unset; color: inherit; cursor: default; font-size: 26px; padding-left: 4ch; white-space: nowrap; }
 .kw:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; border-radius: 4px; }
 .cm { margin-left: 32px; font-size: 18px; opacity: .6; white-space: nowrap; }
+.cm.grp { margin-left: calc(4ch * 26 / 18); }
 .tip {
   position: absolute; right: 36px; top: 50%; width: 400px; padding: 14px 18px; border-radius: 12px;
   background: var(--ink); color: var(--ground); font-size: 15px; line-height: 1.6;
@@ -126,6 +127,11 @@ button { font: inherit; color: inherit; }
 .card .shot { display: block; width: 100%; border-radius: 12px; }
 .card:has(.shot) { display: grid; grid-template-columns: 1fr 520px; gap: 24px 40px; align-items: start; }
 .card .shot { grid-column: 2; grid-row: 1 / span 2; }
+.cards { margin-top: 32px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.cards .card { margin-top: 0; padding: 32px; }
+.cards .card h3 { font-size: 28px; }
+.cards .card .desc { font-size: 17px; }
+.cards .card:has(.shot) { display: flex; }
 .chip { display: inline-block; border: 2px solid var(--line); border-radius: 999px; padding: 4px 16px; font-size: 15px; line-height: 1.5; }
 
 /* ---------- 문의 창 ---------- */
@@ -184,6 +190,9 @@ textarea.in { width: 560px; resize: none; line-height: 1.6; }
 
 /* ---------- 모바일 배치 ---------- */
 @media (max-width: 899px) {
+  .cards { grid-template-columns: 1fr; margin-top: 24px; gap: 16px; }
+  .cards .card { padding: 24px; }
+  .cards .card .desc { font-size: 16px; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
   .contact-line.only-mobile { display: flex; }
