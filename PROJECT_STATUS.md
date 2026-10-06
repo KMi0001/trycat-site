@@ -2,7 +2,7 @@
 
 > Last Updated: 2026-10-06\
 > Environment: Linux cloud (macOS / Windows 미검증)\
-> Branch: work (온보딩 대상: main)
+> Branch: main
 
 ## 현재 목표
 
@@ -98,7 +98,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 ## 다음 세션 인수인계
 
 - 기존 체크아웃을 사용한다. 각 클라우드 작업은 이미 격리되어 있으므로 사용자가 요청하지 않으면 Git worktree를 만들지 않는다.
-- 선택된 원격 참조는 `main`이지만 현재 로컬 브랜치는 `work`이며, 확인한 HEAD는 `d1347dc77ec75c68a3ef0c3bc12a9c858f4865a9`이다.
+- 온보딩 검증은 `work` 브랜치의 `d1347dc77ec75c68a3ef0c3bc12a9c858f4865a9`에서 수행했다. 이후 상태 문서를 `main`에 반영했다. 다음 작업은 최신 `main`과 Git history를 확인하고 시작한다.
 - 환경 초안 저장은 런타임 적용이나 게시 완료를 의미하지 않는다. 외부 리소스 접근은 활성화 후 다시 확인한다.
 - 새 작업에서는 서버 프로세스가 유지된다고 가정하지 않는다.
 - `PROJECT_STATUS.md`와 최근 Git history를 기준으로 계속 진행한다.
